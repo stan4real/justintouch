@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Jost", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  
+  background-image: url('/gradient.png');
+  background-size: cover;
+  background-repeat:no-repeat;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul{
+  padding:0;
+  margin: 0;
+}
+li{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  padding: 0;
+  margin: 0;
+}
+button{
+  border-radius: 76px;
+  padding: 8px 16px 8px 16px;
+  color: #0E362C ;
+  background-color: #fff;
+  text-align: center;
+}
+
