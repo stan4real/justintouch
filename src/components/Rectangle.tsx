@@ -34,7 +34,7 @@ const RectangleLamp = () => {
     </defs>
     </svg>
   return (
-    <div className='relative max-w-[310px]'>
+    <div className='relative max-w-[310px] '>
         {shape}
         <div className='absolute flex flex-col py-4 px-6 gap-[16px] top-0'>
             <p className='text-[18px]'>

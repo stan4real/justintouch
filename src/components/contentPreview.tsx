@@ -2,6 +2,8 @@ import RectangleLamp from "./Rectangle"
 import RectangleGroup from "./RectangleGroup"
 
 const ContentPreview = () => {
+    
+
     const buttonArrow = <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="41" height="41" rx="20.5" fill="#2AC6A1"/>
     <g clipPath="url(#clip0_2046_9007)">
@@ -27,14 +29,17 @@ const ContentPreview = () => {
     <path d="M15.7332 2.17146C16.2595 2.50234 15.8544 4.09347 14.8284 5.72529C13.8023 7.35712 12.5439 8.4117 12.0177 8.08082C11.4914 7.74995 11.8965 6.15882 12.9226 4.52699C13.9486 2.89517 15.207 1.84055 15.7332 2.17146Z" fill="#2AC9A3"/>
     </svg>
     
+
+    
   return (
-    <div className='w-screen iphone13mini:h-[800px] px-[110px] py-[60px] flex '>
+    <div className='w-screen overflow-hidden px-[110px] py-[60px] flex iphone13mini:py-0 iphone13mini:px-4 iphone13mini:flex-col iphone13mini:gap-[315px]'>
+        
         <div className="flex w-[1200px] flex-col gap-10">
-            <h1 className='text-[74px]'>
+            <h1 className='text-[74px] iphone13mini:text-[32px] iphone13mini:w-[330px]'>
             ДЕЛИТЕСЬ ВСЕГДА И <br/>
             ВЕЗДЕ ЭЛЕКТРОННЫМИ <br/> 
             ВИЗИТКАМИ JIT<span>
-                <div className="absolute top-[426px] left-[740px]">
+                <div className="absolute top-[426px] left-[740px] iphone13mini:hidden">
                     <div className="w-24 flex relative">
                         <div className="flex justify-center items-center z-10 w-12 h-12 bg-white rounded-full">
                             {flower}
@@ -46,17 +51,20 @@ const ContentPreview = () => {
             </h1>
         <div>
             <button
-            className="flex items-center gap-2 text-[18px] text-[#2AC6A1] border-[1px] border-[#2AC6A1] shadow-[0_4_31.6_0_#2AC6A1]"
+            className="flex items-center gap-2 text-[18px]  text-[#2AC6A1] border-[1px] border-[#2AC6A1] shadow-[0_4_31.6_0_#2AC6A1]
+            iphone13mini:absolute iphone13mini:top-[380px] iphone13mini:w-[330px] iphone13mini:justify-between"
             >
                 Протестировать и заказать
                 {buttonArrow}
             </button>    
         </div>
         </div>
+        <div className="iphone13mini:absolute iphone13mini:top-[630px] iphone13mini:right-[18px]">
         <RectangleLamp/>
+        </div>
         <RectangleGroup/>
-        <div className="absolute right-[150px] top-[500px]">
-            <p className=" w-[458px] text-[18px]">
+        <div className="absolute right-[150px] top-[510px] iphone13mini:left-[16px] iphone13mini:top-[280px]">
+            <p className=" w-[458px] text-[18px] iphone13mini:w-[340px] iphone13mini:text-[14px]">
             Получите мгновенный доступ к деловым контактам через QR и NFC, а также интегрируйте CRM-системы для более тщательного контроля над своими контактами. 
             </p>
         </div>

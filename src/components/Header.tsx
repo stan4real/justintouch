@@ -25,13 +25,19 @@ function Header() {
     </clipPath>
     </defs>
     </svg>
+    const burger = <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="42" height="42" rx="21" fill="white" fill-opacity="0.2"/>
+    <path d="M32 20H10C9.44772 20 9 20.4477 9 21C9 21.5523 9.44772 22 10 22H32C32.5523 22 33 21.5523 33 21C33 20.4477 32.5523 20 32 20Z" fill="white"/>
+    <path d="M32 13H10C9.44772 13 9 13.4477 9 14C9 14.5523 9.44772 15 10 15H32C32.5523 15 33 14.5523 33 14C33 13.4477 32.5523 13 32 13Z" fill="white"/>
+    <path d="M32 27H10C9.44772 27 9 27.4477 9 28C9 28.5523 9.44772 29 10 29H32C32.5523 29 33 28.5523 33 28C33 27.4477 32.5523 27 32 27Z" fill="white"/>
+    </svg>
     
   return (
-    <div className='w-screen iphone13mini:hidden flex justify-between py-[30px] px-[110px] '>
+    <div className='w-screen  flex justify-between py-[30px] px-[110px] iphone13mini:py-[20px] iphone13mini:px-[18px]'>
         <div className={twMerge('flex items-center w-40 py-[10px] px-8', rectangle)}>
             <Logo/>
         </div>
-        <div className={twMerge('w-[432px] py-[14px] px-8 flex justify-center' , rectangle)}>
+        <div className={twMerge('w-[432px] py-[14px] px-8 flex justify-center iphone13mini:hidden' , rectangle)}>
             <ul className='p-0 m-0 flex gap-8 items-center '>
                 <li>
                     О нас
@@ -47,19 +53,22 @@ function Header() {
                 </li>
             </ul>
         </div>
-        <div className={twMerge('flex items-center py-[11px] px-8', rectangle)}>
+        <div className={twMerge('flex items-center py-[11px] px-8 iphone13mini:hidden', rectangle)}>
             <div className='w-5 h-5'>
                 {phoneSvg}
             </div>
             <p>+7 999 888-77-66</p>
         </div>
-        <div className='flex gap-[10px]'>
+        <div className='flex gap-[10px] iphone13mini:hidden'>
             <button>
                 Войти
             </button>
             <button>
                 {mailSvg}
             </button>
+        </div>
+        <div className='iphone13mini:flex hidden'>
+            {burger}
         </div>
     </div>
   )

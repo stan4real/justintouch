@@ -35,7 +35,7 @@ const RectangleGroup = () => {
     </defs>
     </svg>
   return (
-    <div className="absolute top-[584px] left-[576px]">
+    <div className="absolute top-[584px] left-[576px] iphone13mini:top-[460px] iphone13mini:left-[18px]">
 
     <div className='relative max-w-[310px]'>
         {shape}
