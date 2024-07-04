@@ -1,4 +1,4 @@
-import { twMerge } from "tailwind-merge"
+
 
 const RectangleGroup = () => {
     const group = <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@ const RectangleGroup = () => {
     </linearGradient>
     </defs>
     </svg>
-    const shapeD = ''
+    
   return (
     <div className="absolute top-[606px] left-[528px]
     mini-laptop:top-[300px] mini-laptop:left-[428px]
