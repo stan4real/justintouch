@@ -33,13 +33,15 @@ function Header() {
     </svg>
     
   return (
-    <div className='w-screen  flex justify-between py-[30px] px-[110px] iphone13mini:py-[20px] iphone13mini:px-[18px]'>
-        <div className={twMerge('flex items-center w-40 py-[10px] px-8', rectangle)}>
+    <div className='w-screen  flex justify-between gap-[88px] py-[30px] px-[120px]
+    mini-laptop:px-[50px] mini-laptop:gap-[30px]
+    iphone13mini:pb-6 iphone13mini:pt-[20px] iphone13mini:mt-[40px] iphone13mini:px-[16px]'>
+        <div className={twMerge('flex items-center w-42 h-[43px] px-8 iphone13mini:h-[41.5px]', rectangle)}>
             <Logo/>
         </div>
-        <div className={twMerge('w-[432px] py-[14px] px-8 flex justify-center iphone13mini:hidden' , rectangle)}>
-            <ul className='p-0 m-0 flex gap-8 items-center '>
-                <li>
+        <div className={twMerge('w-[461px] mini-laptop:w-[400px] h-[43px] flex justify-center items-center text-[15.6px]  iphone13mini:hidden tablet:hidden' , rectangle)}>
+            <ul className='p-0 m-0 flex gap-[53px] mini-laptop:gap-[20px]  items-center'>
+                <li className=''>
                     О нас
                 </li>
                 <li>
@@ -48,26 +50,28 @@ function Header() {
                 <li>
                     Решения
                 </li>
-                <li>
-                    Компания
+                <li className='mr-[4px]'>
+                    Контакты
                 </li>
             </ul>
         </div>
-        <div className={twMerge('flex items-center py-[11px] px-8 iphone13mini:hidden', rectangle)}>
+        <div className={twMerge('w-[240px] h-[43px]  flex justify-center gap-[10px] items-center iphone13mini:hidden mini-laptop:hidden', rectangle)}>
             <div className='w-5 h-5'>
                 {phoneSvg}
             </div>
-            <p>+7 999 888-77-66</p>
+            <p className='text-[16px] font-semibold mr-[4px] mt-[2px]'>+7 999 888-77-66</p>
         </div>
-        <div className='flex gap-[10px] iphone13mini:hidden'>
+        <div className='flex gap-[5px] tablet:hidden iphone13mini:hidden'>
             <button>
+                <p className='mt-[2px]'>
                 Войти
+                </p>
             </button>
-            <button>
+            <button className='px-[10px]'>
                 {mailSvg}
             </button>
         </div>
-        <div className='iphone13mini:flex hidden'>
+        <div className='tablet:flex iphone13mini:flex hidden'>
             {burger}
         </div>
     </div>

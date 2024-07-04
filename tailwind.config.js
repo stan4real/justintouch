@@ -6,7 +6,10 @@ export default {
   ],
   theme: {
     screens:{
-      'iphone13mini' : {'max':'375px'}
+      'mini-laptop' : {'max':'1366px'},
+      'tablet': {'max':'769px'},
+      'mobileL':{'max': '520px'},
+      'iphone13mini' : {'max':'376px'}
     },
     extend: {},
   },

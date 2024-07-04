@@ -36,17 +36,17 @@ const RectangleLamp = () => {
   return (
     <div className='relative max-w-[310px] '>
         {shape}
-        <div className='absolute flex flex-col py-4 px-6 gap-[16px] top-0'>
-            <p className='text-[18px]'>
+        <div className='absolute flex flex-col pt-[24px] px-[24px] gap-[16px] top-0'>
+            <p className='text-[18px] leading-[21.6px]'>
                 Связывай инновации <br/>
                 и общение
             </p>
-            <p className='text-[14px]'>
+            <p className='text-[14px] leading-[18.2px]'>
                 Наш сервис поможет повысить <br/>
                 эффективность вашего нетворкинга
             </p>
         </div>
-        <div className='absolute top-0 right-0'>
+        <div className='absolute top-[2px] right-0'>
             {lamp}
         </div>
     </div>

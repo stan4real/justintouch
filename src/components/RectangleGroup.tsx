@@ -1,3 +1,4 @@
+import { twMerge } from "tailwind-merge"
 
 const RectangleGroup = () => {
     const group = <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,22 +35,27 @@ const RectangleGroup = () => {
     </linearGradient>
     </defs>
     </svg>
+    const shapeD = ''
   return (
-    <div className="absolute top-[584px] left-[576px] iphone13mini:top-[460px] iphone13mini:left-[18px]">
-
-    <div className='relative max-w-[310px]'>
+    <div className="absolute top-[606px] left-[528px]
+    mini-laptop:top-[300px] mini-laptop:left-[428px]
+    tablet:left-[100px] tablet:top-[630px]
+    mobileL:top-[710px] mobileL:left-[40px]
+    iphone13mini:top-[497px] iphone13mini:left-[16px]
+    ">
+    <div className='relative w-[310px]'>
         {shape}
-        <div className='absolute flex flex-col py-4 px-6 gap-[16px] top-0'>
-            <p className='text-[18px]'>
+        <div  className='absolute  flex flex-col  px-6 gap-[18px] top-0'>
+            <p className='text-[18px] pt-[22px]'>
                 Подходит для всех
             </p>
-            <p className='text-[14px]'>
-                Выберите удобный тариф, как для <br/>
+            <p className='text-[14px] leading-[18.2px]'>
+                Выберите удобный тариф как для <br/>
                 небольших, так и для крупного
                 сообщества
             </p>
         </div>
-        <div className='absolute top-0 right-0'>
+        <div className='absolute top-[2px] right-0'>
             {group}
         </div>
     </div>

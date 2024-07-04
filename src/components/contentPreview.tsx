@@ -32,14 +32,22 @@ const ContentPreview = () => {
 
     
   return (
-    <div className='w-screen overflow-hidden px-[110px] py-[60px] flex iphone13mini:py-0 iphone13mini:px-4 iphone13mini:flex-col iphone13mini:gap-[315px]'>
+    <div className='w-screen overflow-hidden px-[116px] py-[42px] flex iphone13mini:py-0 iphone13mini:pl-[12px]
+    mini-laptop:py-[20px] mini-laptop:px-[50px]
+    tablet:py-[0] tablet:flex-col tablet:justify-center tablet:items-center  tablet:gap-[20px]
+    iphone13mini:flex-col iphone13mini:gap-[315px]'>
         
-        <div className="flex w-[1200px] flex-col gap-10">
-            <h1 className='text-[74px] iphone13mini:text-[32px] iphone13mini:w-[330px]'>
-            ДЕЛИТЕСЬ ВСЕГДА И <br/>
-            ВЕЗДЕ ЭЛЕКТРОННЫМИ <br/> 
-            ВИЗИТКАМИ JIT<span>
-                <div className="absolute top-[426px] left-[740px] iphone13mini:hidden">
+        <div className="flex w-[896px] flex-col gap-[44px] 
+        tablet:w-full tablet:justify-center tablet:items-center tablet:gap-[30px]">
+            <h1 className='text-[74px] font leading-[88.8px] iphone13mini:text-[32px] 
+            mini-laptop:text-[36px] mini-laptop:leading-[50px]
+            tablet:text-[32px]
+            iphone13mini:w-[320px] iphone13mini:leading-[38px] iphone13mini:pl-[7px]
+            '>
+            ДЕЛИТЕСЬ ВСЕГДА И <br className="iphone13mini:hidden mini-laptop:hidden"/>
+            ВЕЗДЕ ЭЛЕКТРОННЫМИ <br className="tablet:hidden"/> 
+            ВИЗИТКАМИ<span className="hidden iphone13mini:inline text-transparent">.</span> JIT<span>
+                <div className="absolute top-[345px] left-[716px] mini-laptop:hidden iphone13mini:hidden">
                     <div className="w-24 flex relative">
                         <div className="flex justify-center items-center z-10 w-12 h-12 bg-white rounded-full">
                             {flower}
@@ -49,22 +57,33 @@ const ContentPreview = () => {
                 </div>
                 </span>
             </h1>
-        <div>
-            <button
-            className="flex items-center gap-2 text-[18px]  text-[#2AC6A1] border-[1px] border-[#2AC6A1] shadow-[0_4_31.6_0_#2AC6A1]
-            iphone13mini:absolute iphone13mini:top-[380px] iphone13mini:w-[330px] iphone13mini:justify-between"
-            >
-                Протестировать и заказать
+            <div className="">
+                <button
+                className="h-[57px] w-[282px] px-2 pl-[13px] ml-1 flex items-center justify-between text-[18px] leading-[25.2px]  text-[#2AC6A1] border-[1px] border-[#2AC6A1] shadow-[0_4px_31.6px_0_rgba(42,198,161,1)]
+                iphone13mini:absolute iphone13mini:left-[10px] iphone13mini:top-[400px] iphone13mini:w-[344px] iphone13mini:justify-between"
+                >
+                <span className="iphone13mini:hidden mt-[1px] ml-[1px]">
+                Протестировать и заказать    
+                </span>
+                <span className="iphone13mini:inline iphone13mini:mt-[2px] iphone13mini:ml-[4px] hidden">
+                    Заказать NFC-визитки
+                </span>
                 {buttonArrow}
-            </button>    
+                </button>    
+            </div>
         </div>
-        </div>
-        <div className="iphone13mini:absolute iphone13mini:top-[630px] iphone13mini:right-[18px]">
+        <div className="iphone13mini:absolute iphone13mini:top-[662px] iphone13mini:right-[16px]">
         <RectangleLamp/>
         </div>
         <RectangleGroup/>
-        <div className="absolute right-[150px] top-[510px] iphone13mini:left-[16px] iphone13mini:top-[280px]">
-            <p className=" w-[458px] text-[18px] iphone13mini:w-[340px] iphone13mini:text-[14px]">
+        <div className="absolute right-[149px] top-[456px]
+        mini-laptop:right-[200px]
+        tablet:left-[40px] tablet:top-[520px]
+        mobileL:top-[570px] 
+        iphone13mini:left-[16px] iphone13mini:top-[296px]">
+            <p className=" w-[458px] text-[18px] leading-[25.2px]
+            mobileL:w-[340px] 
+            iphone13mini:text-[14px] iphone13mini:leading-[20px] iphone13mini:mt-[1px]">
             Получите мгновенный доступ к деловым контактам через QR и NFC, а также интегрируйте CRM-системы для более тщательного контроля над своими контактами. 
             </p>
         </div>
